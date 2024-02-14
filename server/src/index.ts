@@ -11,7 +11,7 @@ const PORT: string | number = process.env.PORT || 3001;
 const attributesLength = 47;
 const maxFileSize = 2500000;
 
-// app.use(cors());
+app.use(cors());
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
